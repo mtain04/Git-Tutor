@@ -1,6 +1,6 @@
 CMD=git-tutor
 
-all: build link run
+all: build run
 
 run:
 	${CMD}

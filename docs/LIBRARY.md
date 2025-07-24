@@ -16,8 +16,10 @@
 | `@types/fs-extra` | ^11.0.4 | TypeScript definitions for fs-extra            |
 | `@types/inquirer` | ^9.0.8  | TypeScript definitions for inquirer            |
 | `@types/node`     | ^24.1.0 | TypeScript definitions for Node.js             |
+| `@vitest/ui`      | ^3.2.4  | Vitest UI for running tests in the browser     |
 | `tsx`             | ^4.20.3 | TypeScript runner for Node.js with ESM support |
 | `typescript`      | ^5.8.3  | TypeScript compiler                            |
+| `vitest`          | ^3.2.4  | Fast unit test framework powered by Vite       |
 
 ---
 
@@ -34,12 +36,14 @@
 
 ## Dépendances de développement
 
-| Dépendance        | Version | Description                                        |
-| ----------------- | ------- | -------------------------------------------------- |
-| `@types/fs-extra` | ^11.0.4 | Définitions TypeScript pour fs-extra               |
-| `@types/inquirer` | ^9.0.8  | Définitions TypeScript pour inquirer               |
-| `@types/node`     | ^24.1.0 | Définitions TypeScript pour Node.js                |
-| `tsx`             | ^4.20.3 | Exécuteur TypeScript pour Node.js avec support ESM |
-| `typescript`      | ^5.8.3  | Compilateur TypeScript                             |
+| Dépendance        | Version | Description                                                             |
+| ----------------- | ------- | ----------------------------------------------------------------------- |
+| `@types/fs-extra` | ^11.0.4 | Définitions TypeScript pour fs-extra                                    |
+| `@types/inquirer` | ^9.0.8  | Définitions TypeScript pour inquirer                                    |
+| `@types/node`     | ^24.1.0 | Définitions TypeScript pour Node.js                                     |
+| `@vitest/ui`      | ^3.2.4  | Interface utilisateur Vitest pour exécuter les tests dans le navigateur |
+| `tsx`             | ^4.20.3 | Exécuteur TypeScript pour Node.js avec support ESM                      |
+| `typescript`      | ^5.8.3  | Compilateur TypeScript                                                  |
+| `vitest`          | ^3.2.4  | Framework de tests unitaires rapide alimenté par Vite                   |
 
 ---
