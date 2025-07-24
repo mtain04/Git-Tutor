@@ -1,4 +1,5 @@
 import inquirer from 'inquirer'
+import { choices } from './constants/choices.const.js'
 
 export async function menu() {
   const answer = await inquirer.prompt([
@@ -6,17 +7,11 @@ export async function menu() {
       type: 'list',
       name: 'exercise',
       message: 'Choose a GitTutor exercise:',
-      choices: [
-        {
-          name: 'Initialize a Git repository (init-commit)',
-          value: 'init-commit',
-        },
-        { name: 'Quit', value: 'exit' },
-      ],
+      choices,
     },
   ])
 
-  if (answer.exercise === 'init-commit') {
+  if (answer.exercise === 'basic-commands') {
     // await setup()
 
     console.log('\n👉 Now, perform the required Git actions in this folder.')
