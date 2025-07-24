@@ -1,0 +1,39 @@
+{
+  "id": "basic-commands",
+  "title": "Initialize a Git repository (init-commit)",
+  "description": "Learn how to initialize a Git repository and make your first commit",
+  "difficulty": "beginner",
+  "duration": 5,
+  "steps": [
+    {
+      "title": "Initialize a Git repository",
+      "description": "Learn how to initialize a Git repository",
+      "commands": ["git init"],
+      "expected": ["A new directory called .git should have been created"]
+    },
+    {
+      "title": "Add a file to the index",
+      "description": "Learn how to add a file to the index",
+      "commands": ["git add <filename>"],
+      "expected": ["The file should be added to the index"]
+    },
+    {
+      "title": "Make your first commit",
+      "description": "Learn how to make your first commit",
+      "commands": ["git commit -m 'Initial commit'"],
+      "expected": ["The commit should be made"]
+    },
+    {
+      "title": "Push your changes to the remote repository",
+      "description": "Learn how to push your changes to the remote repository",
+      "commands": ["git push"],
+      "expected": ["The changes should be pushed to the remote repository"]
+    }
+  ],
+  "objectives": [
+    "Initialize a Git repository",
+    "Add a file to the index",
+    "Make your first commit",
+    "Push your changes to the remote repository"
+  ]
+}
