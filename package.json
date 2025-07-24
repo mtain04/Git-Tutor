@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "GitTutor CLI",
   "bin": {
-    "git-tutor": "./dist/main.js"
+    "git-tutor": "./dist/src/main.js"
   },
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "tsx src/main.ts",
-    "dev": "tsx watch src/main.ts",
     "clean": "rm -rf dist",
     "test": "vitest",
     "test:ui": "vitest --ui"
