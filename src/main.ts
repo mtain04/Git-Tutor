@@ -1,11 +1,17 @@
 #!/usr/bin/env node
 
 import { menu } from './menu.js'
+import { checkPrerequisites } from './prerequisites.js'
 
-console.log(
-  `
+async function main() {
+  console.log('🧠 GitTutor - Checking environment...')
+  await checkPrerequisites()
+
+  console.log('')
+
+  console.log(
+    `
 .------------------------------------------------------------------------.
-|                                                                        |
 |                                                                        |
 |      ____   ___   _             _____           _                      |
 |     / ___| |_ _| | |_          |_   _|  _   _  | |_    ___    _ __     |
@@ -16,9 +22,14 @@ console.log(
 |                                                                        |
 '------------------------------------------------------------------------'
   `
-)
+  )
 
-console.log('🎓 Welcome to GitTutor CLI ')
-console.log('You are about to learn Git in a fun and interactive way')
+  console.log('🎓 Welcome to GitTutor CLI ')
+  console.log('You are about to learn Git in a fun and interactive way')
 
-menu()
+  console.log('')
+
+  menu()
+}
+
+main()
