@@ -1,17 +1,18 @@
 import { execSync } from 'child_process'
-import simpleGit from 'simple-git'
 
 export async function checkPrerequisites() {
   console.log('')
-  await checkGit()
-  await checkDocker()
+  const hasGit = await checkGit()
+  const hasDocker = await checkDocker()
+
+  return { hasGit, hasDocker }
 }
 
 async function checkGit() {
   try {
-    const git = simpleGit()
-    await git.version()
+    execSync('git --version', { stdio: 'ignore' })
     console.log('✅ Git detected')
+    return true
   } catch {
     console.log('❌ Git is required !')
     console.log('📥 Install Git: https://git-scm.com/downloads')
@@ -23,6 +24,7 @@ async function checkDocker() {
   try {
     execSync('docker --version', { stdio: 'ignore' })
     console.log('✅ Docker detected')
+    return true
   } catch {
     console.log('❌ Docker is required !')
     console.log('📥 Install Docker: https://docker.com/get-started')
