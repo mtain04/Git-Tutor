@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "GitTutor CLI",
   "bin": {
-    "git-tutor": "./dist/src/main.js"
+    "git-tutor": "./dist/main.js"
   },
   "type": "module",
   "scripts": {
