@@ -1,6 +1,24 @@
 #!/usr/bin/env node
-import { mainMenu } from './menu.js'
 
-console.log('🎓 Bienvenue dans GitTutor CLI en TypeScript !')
+import { menu } from './menu.js'
 
-mainMenu()
+console.log(
+  `
+.------------------------------------------------------------------------.
+|                                                                        |
+|                                                                        |
+|      ____   ___   _             _____           _                      |
+|     / ___| |_ _| | |_          |_   _|  _   _  | |_    ___    _ __     |
+|    | |  _   | |  | __|  _____    | |   | | | | | __|  / _ \\  | '__|    |
+|    | |_| |  | |  | |_  |_____|   | |   | |_| | | |_  | (_) | | |       |
+|     \\____| |___|  \\__|           |_|    \\__,_|  \\__|  \\___/  |_|       |
+|                                                                        |
+|                                                                        |
+'------------------------------------------------------------------------'
+  `
+)
+
+console.log('🎓 Welcome to GitTutor CLI ')
+console.log('You are about to learn Git in a fun and interactive way')
+
+menu()
