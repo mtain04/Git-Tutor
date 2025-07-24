@@ -1,17 +1,17 @@
 import inquirer from 'inquirer'
 
-export async function mainMenu() {
+export async function menu() {
   const answer = await inquirer.prompt([
     {
       type: 'list',
       name: 'exercise',
-      message: 'Choisis un exercice GitTutor :',
+      message: 'Choose a GitTutor exercise:',
       choices: [
         {
-          name: 'Initialiser un dépôt Git (init-commit)',
+          name: 'Initialize a Git repository (init-commit)',
           value: 'init-commit',
         },
-        { name: 'Quitter', value: 'exit' },
+        { name: 'Quit', value: 'exit' },
       ],
     },
   ])
@@ -19,16 +19,14 @@ export async function mainMenu() {
   if (answer.exercise === 'init-commit') {
     // await setup()
 
-    console.log(
-      '\n👉 Maintenant, effectue les actions Git demandées dans ce dossier.'
-    )
-    console.log('Quand tu as terminé, appuie sur Entrée pour valider.')
+    console.log('\n👉 Now, perform the required Git actions in this folder.')
+    console.log('When you are done, press Enter to validate.')
 
     await inquirer.prompt([
       {
         type: 'input',
         name: 'ready',
-        message: 'Prêt à valider ?',
+        message: 'Ready to validate?',
       },
     ])
 
@@ -41,7 +39,7 @@ export async function mainMenu() {
   }
 
   if (answer.exercise === 'exit') {
-    console.log('À bientôt ! 👋')
+    console.log('See you soon! 👋')
     process.exit(0)
   }
 }
