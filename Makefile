@@ -11,6 +11,12 @@ link:
 build:
 	pnpm build
 
+test:
+	pnpm test
+
+test-coverage:
+	pnpm test:coverage
+
 docker:
 	./scripts/build-docker.sh
 
