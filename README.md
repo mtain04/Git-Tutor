@@ -2,7 +2,20 @@
 
 **GitTutor** is an open source interactive CLI for practicing Git through hands-on exercises, executed in isolated environments using Docker.
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Educational-Tool-brightgreen?style=for-the-badge&logo=graduation-cap&logoColor=white" alt="Educational">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="MIT License">
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Coverage-9.05%25-red?style=for-the-badge&logo=vitest&logoColor=white" alt="Code Coverage">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220" alt="PNPM">
+  <img src="https://img.shields.io/badge/CLI-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="CLI">
+  <img src="https://img.shields.io/badge/Open%20Source-%23FF6B6B.svg?style=for-the-badge&logo=github&logoColor=white" alt="Open Source">
+</p>
 
 ## 🚀 Goal
 
