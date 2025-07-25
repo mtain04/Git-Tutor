@@ -1,4 +1,4 @@
-import { ExerciseChoice } from '../types/exercice.type.js'
+import { ExerciseChoice } from '../types/exercice.js'
 
 export const choices: ExerciseChoice[] = [
   {
