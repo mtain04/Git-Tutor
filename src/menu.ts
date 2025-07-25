@@ -14,6 +14,16 @@ export async function menu() {
     },
   ])
 
+  switch (answer.exercise) {
+    case 'basic-commands':
+      // TODO: Refactor into a functions to handle the exercise
+      break
+    case 'exit':
+      break
+    default:
+      break
+  }
+  // TODO: Refactor into switch case
   if (answer.exercise === 'basic-commands') {
     const result = await setup(
       path.join(process.cwd(), 'workspaces/basic-commands')
