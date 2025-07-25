@@ -69,9 +69,9 @@ git-tutor
 
 4. **The user enters the container** to complete the exercise:
 
-   ```bash
-   docker exec -it git-tutor-<exo> sh
-   ```
+```bash
+docker exec -it git-tutor-<exo> sh
+```
 
 5. Once finished, they run **validation** via the CLI
 
