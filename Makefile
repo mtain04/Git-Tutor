@@ -1,6 +1,6 @@
 CMD=git-tutor
 
-all: build run
+all: build docker run
 
 run:
 	${CMD}
@@ -11,7 +11,11 @@ link:
 build:
 	pnpm build
 
+docker:
+	./scripts/build-docker.sh
+
 clean:
 	pnpm clean
+	docker rmi git-tutor:latest 2>/dev/null || true
 
-.PHONY: all run link build clean
+.PHONY: all run link build docker clean
