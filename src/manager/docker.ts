@@ -90,10 +90,11 @@ export class DockerManager {
 
   static showAccessInstructions(containerName: string): void {
     console.log('\n📋 Instructions:')
-    console.log(`1. Access your practice environment:`)
+    console.log('1. Open a new terminal')
+    console.log(`2. Access your practice environment:`)
     console.log(`   docker exec -it ${containerName} bash`)
-    console.log(`2. When you're done, exit the container with: exit`)
-    console.log(`3. The container will be automatically cleaned up`)
+    console.log(`3. When you're done, exit the container with: exit`)
+    console.log(`4. The container will be automatically cleaned up`)
   }
 
   static async cleanupAllContainers(): Promise<void> {
