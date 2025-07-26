@@ -3,7 +3,7 @@
 import { menu } from './menu.js'
 import { checkPrerequisites } from './prerequisites.js'
 
-async function main() {
+export async function main() {
   console.log('🧠 GitTutor - Checking environment...')
   await checkPrerequisites()
 
@@ -29,7 +29,7 @@ async function main() {
 
   console.log('')
 
-  menu()
+  await menu()
 }
 
 main()
