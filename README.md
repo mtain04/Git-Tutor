@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Educational-Tool-brightgreen?style=for-the-badge&logo=graduation-cap&logoColor=white" alt="Educational">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="MIT License">
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Coverage-15.51%25-red?style=for-the-badge&logo=vitest&logoColor=white" alt="Code Coverage">
+  <img src="https://img.shields.io/badge/Coverage-15.45%25-red?style=for-the-badge&logo=vitest&logoColor=white" alt="Code Coverage">
 </p>
 
 <p align="center">
