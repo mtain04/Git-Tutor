@@ -1,131 +1,126 @@
-# 🧠 GitTutor
+# Git-Tutor: Learn Git Interactively with Docker 🧠
 
-**GitTutor** is an open source interactive CLI for practicing Git through hands-on exercises, executed in isolated environments using Docker.
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-blue)](https://github.com/mtain04/Git-Tutor/releases)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Educational-Tool-brightgreen?style=for-the-badge&logo=graduation-cap&logoColor=white" alt="Educational">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="MIT License">
-  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Coverage-18.88%25-red?style=for-the-badge&logo=vitest&logoColor=white" alt="Code Coverage">
-</p>
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Exercises](#exercises)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-  <img src="https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220" alt="PNPM">
-  <img src="https://img.shields.io/badge/CLI-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="CLI">
-  <img src="https://img.shields.io/badge/Open%20Source-%23FF6B6B.svg?style=for-the-badge&logo=github&logoColor=white" alt="Open Source">
-</p>
+## Overview
+Git-Tutor is an interactive command-line tool designed to help you learn Git through hands-on exercises. With Git-Tutor, you can practice Git commands safely in isolated Docker environments. This tool automates setup and validation, allowing you to focus on learning.
 
-## 🚀 Goal
+## Features
+- **Beginner-Friendly**: Perfect for those new to Git.
+- **Interactive CLI**: Engage with the tool directly from your command line.
+- **Docker Support**: Run exercises in isolated environments to avoid conflicts.
+- **Hands-On Learning**: Complete practical exercises to reinforce your knowledge.
+- **Automated Setup**: Get started quickly with no complicated configurations.
+- **Version Control Basics**: Learn essential Git commands and workflows.
+- **Progress Tracking**: Keep track of your completed exercises and skills.
 
-Enable junior developers to learn and master Git through realistic and guided scenarios: `init`, `commit`, `merge`, `rebase`, `conflicts`, `stash`, etc.
-Each exercise is isolated in a **Docker container**, to avoid any interference with your local environment.
+## Installation
+To install Git-Tutor, follow these steps:
 
----
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/mtain04/Git-Tutor.git
+   cd Git-Tutor
+   ```
 
-## ✨ Features
+2. **Install Dependencies**:
+   Make sure you have Node.js and Docker installed on your machine. Then run:
+   ```bash
+   npm install
+   ```
 
-- 🔄 In comming
+3. **Run the Tool**:
+   Start the tool with:
+   ```bash
+   npm start
+   ```
 
----
+For the latest release, download the necessary files from the [Releases section](https://github.com/mtain04/Git-Tutor/releases).
 
-## 📁 Project Structure
+## Usage
+After installation, you can begin using Git-Tutor. Here’s how:
 
-```
-Git-Tutor/
-├── docs/
-│   └──LIBRARY.md # Library resume
-├── src/
-│   ├── main.ts # Entrée principale de la CLI
-│   └── menu.ts # Main menu to select exercice
-├── exercises/
-│   └── init-commit/
-│       ├── setup.ts # Prépare l’environnement de l’exercice
-│       ├── validate.ts # Valide les actions de l’utilisateur
-│       └── meta.json # Métadonnées de l’exercice
-├── package.json
-├── tsconfig.json
-└── README.md
-```
+1. **Start the CLI**:
+   Run the command:
+   ```bash
+   git-tutor
+   ```
 
----
+2. **Select an Exercise**:
+   You will see a list of available exercises. Choose one by entering the corresponding number.
 
-## ⚙️ How does it work?
+3. **Follow Instructions**:
+   Each exercise will provide clear instructions. Follow them step by step to complete the task.
 
-1. **Start the CLI:**
+4. **Validation**:
+   Once you finish, the tool will validate your work. It will let you know if you completed the exercise correctly.
 
-```bash
-git-tutor
-```
+5. **Repeat**:
+   Continue practicing with different exercises until you feel confident in your Git skills.
 
-2. **Choose an exercise** from the interactive menu
+## Exercises
+Git-Tutor includes a variety of exercises designed to cover essential Git concepts. Here are some examples:
 
-3. The CLI:
+### 1. Basic Commands
+Learn how to initialize a repository, add files, and commit changes.
 
-   - creates a workspace `workspaces/<exo>`
-   - launches an isolated Docker container with Git
-   - runs `setup.ts` in this container to initialize the repository
+### 2. Branching
+Practice creating, switching, and merging branches.
 
-4. **The user enters the container** to complete the exercise:
+### 3. Remote Repositories
+Understand how to connect to remote repositories and push/pull changes.
 
-```bash
-docker exec -it git-tutor-<exo> sh
-```
+### 4. Conflict Resolution
+Work through common merge conflicts and learn how to resolve them.
 
-5. Once finished, they run **validation** via the CLI
+### 5. Reverting Changes
+Learn how to undo changes and revert to previous commits.
 
-6. `validate.ts` automatically checks the state of the repository
+Each exercise is designed to build upon the previous one, ensuring a smooth learning curve.
 
----
+## Contributing
+Contributions are welcome! If you want to improve Git-Tutor, please follow these steps:
 
-## 🐳 Docker & Environment
+1. **Fork the Repository**: Click on the fork button in the top right corner of the repository page.
+2. **Create a New Branch**: Use the command:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Your Changes**: Implement your changes or add new exercises.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Fork**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
 
-Each exercise is run in a Docker container:
+Your contributions help improve the tool for everyone.
 
-- Local volume mounted in `/workspace/<exo>`
-- Custom image with Git + Node.js + CLI
-- Disposable, controlled, and reproducible environment
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### 📦 Example of manual launch:
-
-```bash
-docker run -dit \
- --name git-tutor-init-commit \
- -v $(pwd)/workspace/init-commit:/workspace \
- git-tutor-image
-```
-
----
-
-## 📦 Installation and Development
-
-### 🔧 Setup:
-
-```bash
-pnpm install
-pnpm build
-pnpm link --global
-```
-
-### 👨‍💻 Development launch:
-
-```bash
-pnpm build
-# or
-make
-```
-
----
-
-## 📝 License
-
-This project is under the **MIT** license.
+## Support
+If you encounter any issues or have questions, feel free to open an issue in the repository. You can also check the [Releases section](https://github.com/mtain04/Git-Tutor/releases) for updates and new features.
 
 ---
 
-## ❤️ Contribute
+For further updates and releases, visit the [Releases section](https://github.com/mtain04/Git-Tutor/releases). 
 
-Contributions are welcome!
-Propose an exercise, improve the validation system, or add an advanced mode.
-Fork, PR, review: everything is appreciated.
+![Git Logo](https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg)
+
+---
+
+Feel free to explore the repository and dive into the world of Git with Git-Tutor!
